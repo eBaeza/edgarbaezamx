@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  background: linear-gradient(to left, #734b6d 40%, #42275a);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+
+a {
+  color: turquoise;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: 'Fira Code';
+  font-size: 14px;
+}

@@ -1,0 +1,64 @@
+@font-face{
+    font-family: 'Fira Code';
+    src: url('./FiraCode-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.App {
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.container > div {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container > div {
+    width: 50%;
+  }
+}
+
+.App-personage {
+  max-height: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.App-header {
+  padding: 20px;
+}
+
+.intro-code {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  background: #232526;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.App-header h2 {
+  font-weight: normal;
+}
+
+.App-intro {
+  font-size: large;
+  padding: 1em;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

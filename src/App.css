@@ -17,30 +17,34 @@
   justify-content: space-between;
   align-items: center;
   flex-flow: wrap;
-  padding: 20px;
+  padding: 10px;
 }
 
 .container > div {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .container > div {
-    width: 50%;
-  }
-}
-
 .App-personage {
+  max-width: 100%;
   max-height: 600px;
   display: block;
   margin: 0 auto;
 }
 
-.App-header {
-  padding: 20px;
+.App-personage.thinking {
+  margin: 2em auto;
+  display: none;
 }
 
-.intro-code {
+.App-personage.sitting {
+  margin: 1em auto;
+}
+
+.App-header h2 {
+  font-weight: normal;
+}
+
+.App-introcode {
   max-width: 400px;
   margin: 0 auto;
   text-align: left;
@@ -49,16 +53,26 @@
   border-radius: 5px;
 }
 
-.App-header h2 {
-  font-weight: normal;
-}
-
 .App-intro {
   font-size: large;
-  padding: 1em;
+  padding: 0 40px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media (min-width: 768px) {
+  .container > div:first-child {
+    width: 40%;
+  }
+
+  .container > div:last-child {
+    order: 2;
+    width: 60%;
+  }
+
+  .App-personage.thinking {
+    display: block;
+  }
+
+  .App-personage.sitting {
+    display: none;
+  }
 }

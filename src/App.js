@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import ebaeza from './edgarbaeza-thinking.png'
+import ebaezaThink from './edgarbaeza-thinking.png'
+import ebaezaSit from './edgarbaeza-sitting.png'
 import './App.css'
 
 class App extends Component {
@@ -8,32 +9,39 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <div>
-            <img src={ebaeza} className="App-personage" alt="logo" />
+            <img src={ebaezaThink} className="App-personage thinking" alt="Edgar Baeza pensando"/>
           </div>
           <div>
-            <div className="App-header">
+            <header className="App-header">
               <h1>Edgar Baeza</h1>
               <h2>Web Application Developer</h2>
+            </header>
 
-              <div className="intro-code">
-                <code>
-                  let ebaeza = 'Edgar Baeza'<br /><br />
+            <img src={ebaezaSit} className="App-personage sitting" alt="Edgar Baeza sentado"/>
 
-                  if (ebaeza === 'Web developer')<br />
-                  console.log("Let's code!!")
-                </code>
-              </div>
+            <div className="App-introcode">
+              <code>
+                let ebaeza = new Developer()<br /><br />
+                if (ebaeza.status !== 'coding') {'{'}<br />
+                &nbsp;&nbsp;console.log("Hey! I need tacos!")<br />
+                &nbsp;&nbsp;ebaeza.getSteroids()<br />
+                {'} else {'}<br />
+                &nbsp;&nbsp;console.log("Let's rock!!")<br />
+                &nbsp;&nbsp;ebaeza.getThePower()<br />
+                {'}'}
+              </code>
             </div>
-            <p className="App-intro">
-              "I enjoyed the puzzle of expressing human thoughts and idioms in terms of a programming language" <br />
-              Joe McCullough.
-            </p>
 
-            <p>
-              Contáctame: <br />
-              email: <a href="mailto:holamundo@edgarbaeza.mx">holamundo@edgarbaeza.mx</a> <br />
-              móvil: <a href="tel:5518373164">55 18373164</a>
-            </p>
+            <p className="App-intro">"I enjoyed the puzzle of expressing human thoughts and idioms in terms of a programming language"</p>
+
+            <footer>
+              Contact: <br />
+              <i className="fa fa-envelope"></i> <a href="mailto:holamundo@edgarbaeza.mx">holamundo@edgarbaeza.mx</a> <br />
+              <i className="fa fa-mobile"></i> <a href="tel:5518373164">55 18373164</a> <br /><br />
+              Social: <br />
+              <i className="fa fa-github"></i> <a href="https://github.com/eBaeza">eBaeza</a> <br />
+              <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza">edgar-baeza</a> <br />
+            </footer>
           </div>
         </div>
       </div>

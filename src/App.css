@@ -37,6 +37,7 @@
 }
 
 .App-personage.sitting {
+  max-width: 220px;
   margin: 1em auto;
 }
 

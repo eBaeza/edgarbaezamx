@@ -41,6 +41,8 @@ class App extends Component {
               Social: <br />
               <i className="fa fa-github"></i> <a href="https://github.com/eBaeza">eBaeza</a> <br />
               <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza">edgar-baeza</a> <br />
+              <br />
+              <p>Un saludo con mucho cariño a Yaki Zeltzin ❤</p>
             </footer>
           </div>
         </div>

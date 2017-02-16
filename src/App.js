@@ -2,9 +2,22 @@ import React, { Component } from 'react'
 import ebaezaThink from './edgarbaeza-thinking.png'
 import ebaezaSit from './edgarbaeza-sitting.png'
 import './App.css'
+import Highlight from 'react-highlight'
+import 'highlight.js/styles/atom-one-dark.css'
 
 class App extends Component {
   render() {
+    let snippet =
+`let ebaeza = new Developer()
+
+if (ebaeza.status !== 'coding') {
+  console.log("Hey! I need tacos!")
+  ebaeza.getSteroids()
+} else {
+  console.log("Let's rock!!")
+  ebaeza.getThePower()
+}`
+
     return (
       <div className="App">
         <div className="container">
@@ -19,18 +32,9 @@ class App extends Component {
 
             <img src={ebaezaSit} className="App-personage sitting" alt="Edgar Baeza sentado"/>
 
-            <div className="App-introcode">
-              <code>
-                let ebaeza = new Developer()<br /><br />
-                if (ebaeza.status !== 'coding') {'{'}<br />
-                &nbsp;&nbsp;console.log("Hey! I need tacos!")<br />
-                &nbsp;&nbsp;ebaeza.getSteroids()<br />
-                {'} else {'}<br />
-                &nbsp;&nbsp;console.log("Let's rock!!")<br />
-                &nbsp;&nbsp;ebaeza.getThePower()<br />
-                {'}'}
-              </code>
-            </div>
+            <Highlight className="App-introcode js">
+              {snippet}
+            </Highlight>
 
             <p className="App-intro">"I enjoy the puzzle of expressing human thoughts and idioms in terms of a programming language"</p>
 

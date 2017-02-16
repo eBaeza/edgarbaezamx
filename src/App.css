@@ -48,10 +48,9 @@
 .App-introcode {
   max-width: 400px;
   margin: 0 auto;
-  text-align: left;
-  background: #232526;
-  padding: 15px;
   border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px !important;
 }
 
 .App-intro {

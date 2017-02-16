@@ -32,7 +32,7 @@ class App extends Component {
               </code>
             </div>
 
-            <p className="App-intro">"I enjoyed the puzzle of expressing human thoughts and idioms in terms of a programming language"</p>
+            <p className="App-intro">"I enjoy the puzzle of expressing human thoughts and idioms in terms of a programming language"</p>
 
             <footer>
               Contact: <br />

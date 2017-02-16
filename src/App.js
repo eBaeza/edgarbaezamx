@@ -39,14 +39,18 @@ if (ebaeza.status !== 'coding') {
             <p className="App-intro">"I enjoy the puzzle of expressing human thoughts and idioms in terms of a programming language"</p>
 
             <footer>
-              Contact: <br />
-              <i className="fa fa-envelope"></i> <a href="mailto:holamundo@edgarbaeza.mx">holamundo@edgarbaeza.mx</a> <br />
-              <i className="fa fa-mobile"></i> <a href="tel:5518373164">55 18373164</a> <br />
-              <i className="fa fa-skype"></i> <a href="skype:e-baeza?chat">e-baeza</a> <br /><br />
-              Social: <br />
-              <i className="fa fa-github"></i> <a href="https://github.com/eBaeza">eBaeza</a> <br />
-              <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza">edgar-baeza</a> <br />
-              <br />
+              <p>
+                Contact: <br />
+                <i className="fa fa-envelope"></i> <a href="mailto:holamundo@edgarbaeza.mx">holamundo@edgarbaeza.mx</a> <br />
+                <i className="fa fa-mobile"></i> <a href="tel:5518373164">55 18373164</a> <br />
+                <i className="fa fa-skype"></i> <a href="skype:e-baeza?chat">e-baeza</a>
+              </p>
+              <p>Resume: <i className="fa fa-file-text"/> <a href="https://www.dropbox.com/s/9uj6d4a4dvwdzrt/Edgar_Aparicio_Baeza_CV_2017.pdf?dl=0" target="_blank">More about me</a> </p>
+              <p>
+                Social: <br />
+                <i className="fa fa-github"></i> <a href="https://github.com/eBaeza">eBaeza</a> <br />
+                <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza">edgar-baeza</a> <br />
+              </p>
               <p>Un saludo con mucho cariño a Yaki Zeltzin ❤</p>
             </footer>
           </div>

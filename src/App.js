@@ -37,7 +37,8 @@ class App extends Component {
             <footer>
               Contact: <br />
               <i className="fa fa-envelope"></i> <a href="mailto:holamundo@edgarbaeza.mx">holamundo@edgarbaeza.mx</a> <br />
-              <i className="fa fa-mobile"></i> <a href="tel:5518373164">55 18373164</a> <br /><br />
+              <i className="fa fa-mobile"></i> <a href="tel:5518373164">55 18373164</a> <br />
+              <i className="fa fa-skype"></i> <a href="skype:e-baeza?chat">e-baeza</a> <br /><br />
               Social: <br />
               <i className="fa fa-github"></i> <a href="https://github.com/eBaeza">eBaeza</a> <br />
               <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza">edgar-baeza</a> <br />

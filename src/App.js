@@ -7,8 +7,12 @@ import 'highlight.js/styles/atom-one-dark.css'
 
 class App extends Component {
   render() {
-    let snippet =
-`let ebaeza = new Developer()
+    const snippet =
+`const ebaeza = new Developer({
+  fullstack: true,
+  passionate: true,
+  autodidact: true,
+})
 
 if (ebaeza.status !== 'coding') {
   console.log("Hey! I need tacos!")
@@ -17,6 +21,7 @@ if (ebaeza.status !== 'coding') {
   console.log("Let's rock!!")
   ebaeza.getThePower()
 }`
+  const urlCV = 'https://www.dropbox.com/s/etwr5tmqvn6owxf/Edgar_Aparicio_Baeza_CV_2017.pdf?dl=0'
 
     return (
       <div className="App">
@@ -45,13 +50,12 @@ if (ebaeza.status !== 'coding') {
                 <i className="fa fa-mobile"></i> <a href="tel:5518373164">55 18373164</a> <br />
                 <i className="fa fa-skype"></i> <a href="skype:e-baeza?chat">e-baeza</a>
               </p>
-              <p>Resume: <i className="fa fa-file-text"/> <a href="https://www.dropbox.com/s/9uj6d4a4dvwdzrt/Edgar_Aparicio_Baeza_CV_2017.pdf?dl=0" target="_blank">More about me</a> </p>
+              <p>Resume: <i className="fa fa-file-text"/> <a href={urlCV} target="_blank">More about me</a> </p>
               <p>
                 Social: <br />
-                <i className="fa fa-github"></i> <a href="https://github.com/eBaeza">eBaeza</a> <br />
-                <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza">edgar-baeza</a> <br />
+                <i className="fa fa-github"></i> <a href="https://github.com/eBaeza" target="_blank">eBaeza</a> <br />
+                <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza" target="_blank">edgar-baeza</a> <br />
               </p>
-              <p>Un saludo con mucho cariño a Yaki Zeltzin ❤</p>
             </footer>
           </div>
         </div>

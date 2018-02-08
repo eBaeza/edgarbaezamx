@@ -21,7 +21,7 @@ if (ebaeza.status !== 'coding') {
   console.log("Let's rock!!")
   ebaeza.getThePower()
 }`
-  const urlCV = 'https://www.dropbox.com/s/etwr5tmqvn6owxf/Edgar_Aparicio_Baeza_CV_2017.pdf?dl=0'
+  const urlCV = 'https://www.dropbox.com/s/4cy3yj58gs4y5qa/Edgar_Aparicio_Baeza_CV.pdf?dl=0'
 
     return (
       <div className="App">

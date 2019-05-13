@@ -9,14 +9,7 @@ import 'highlight.js/styles/atom-one-dark.css'
 const urlCV = 'https://firebasestorage.googleapis.com/v0/b/edgarbaezamx.appspot.com/o/Edgar_Aparicio_Baeza_CV.pdf?alt=media&token=227c4338-3280-4fe7-9770-6e1ab8752abc'
 
 class App extends Component {
-  state = {
-    numPages: null,
-    pageNumber: 1,
-  }
-
   render() {
-    const { numPages, pageNumber } = this.state
-
     return (
       <div className="App">
         <div className="container">

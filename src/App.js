@@ -1,27 +1,21 @@
 import React, { Component } from 'react'
+import snippet from './snippetCode'
 import ebaezaThink from './edgarbaeza-thinking.png'
 import ebaezaSit from './edgarbaeza-sitting.png'
 import './App.css'
 import Highlight from 'react-highlight'
 import 'highlight.js/styles/atom-one-dark.css'
 
-class App extends Component {
-  render() {
-    const snippet =
-`const ebaeza = new Developer({
-  fullstack: true,
-  passionate: true,
-  autodidact: true,
-})
+const urlCV = 'https://firebasestorage.googleapis.com/v0/b/edgarbaezamx.appspot.com/o/Edgar_Aparicio_Baeza_CV.pdf?alt=media&token=227c4338-3280-4fe7-9770-6e1ab8752abc'
 
-if (ebaeza.status !== 'coding') {
-  console.log("Hey! I need tacos!")
-  ebaeza.getSteroids()
-} else {
-  console.log("Let's rock!!")
-  ebaeza.getThePower()
-}`
-  const urlCV = 'https://www.dropbox.com/s/4cy3yj58gs4y5qa/Edgar_Aparicio_Baeza_CV.pdf?dl=0'
+class App extends Component {
+  state = {
+    numPages: null,
+    pageNumber: 1,
+  }
+
+  render() {
+    const { numPages, pageNumber } = this.state
 
     return (
       <div className="App">

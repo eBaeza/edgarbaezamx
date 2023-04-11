@@ -6,7 +6,7 @@ import './App.css'
 import Highlight from 'react-highlight'
 import 'highlight.js/styles/atom-one-dark.css'
 
-const urlCV = 'https://firebasestorage.googleapis.com/v0/b/edgarbaezamx.appspot.com/o/Edgar_Aparicio_Baeza_CV.pdf?alt=media&token=227c4338-3280-4fe7-9770-6e1ab8752abc'
+const urlCV = 'https://storage.googleapis.com/edgarbaezamx.appspot.com/Edgar_Aparicio_Baeza_CV.pdf'
 
 class App extends Component {
   render() {
@@ -33,15 +33,13 @@ class App extends Component {
             <footer>
               <p>
                 Contact: <br />
-                <i className="fa fa-envelope"></i> <a href="mailto:holamundo@edgarbaeza.mx">holamundo@edgarbaeza.mx</a> <br />
-                <i className="fa fa-mobile"></i> <a href="tel:5518373164">55 18373164</a> <br />
-                <i className="fa fa-skype"></i> <a href="skype:e-baeza?chat">e-baeza</a>
+                <i className="fa fa-envelope"></i> <a href="mailto:ebaeza1992@gmail.com">ebaeza1992@gmail.com</a> <br />
               </p>
-              <p>Resume: <i className="fa fa-file-text"/> <a href={urlCV} target="_blank">More about me</a> </p>
+              <p>Resume: <i className="fa fa-file-text"/> <a href={urlCV} target="_blank" rel="noreferrer">More about me</a> </p>
               <p>
                 Social: <br />
-                <i className="fa fa-github"></i> <a href="https://github.com/eBaeza" target="_blank">eBaeza</a> <br />
-                <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza" target="_blank">edgar-baeza</a> <br />
+                <i className="fa fa-github"></i> <a href="https://github.com/eBaeza" target="_blank" rel="noreferrer">eBaeza</a> <br />
+                <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza" target="_blank" rel="noreferrer">edgar-baeza</a> <br />
               </p>
             </footer>
           </div>

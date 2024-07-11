@@ -6,7 +6,7 @@ import './App.css'
 import Highlight from 'react-highlight'
 import 'highlight.js/styles/atom-one-dark.css'
 
-const urlCV = 'https://storage.googleapis.com/edgarbaezamx.appspot.com/Edgar_Aparicio_Baeza_CV.pdf'
+const urlCV = 'https://storage.googleapis.com/edgarbaezamx.appspot.com/CV_Edgar_Aparicio_Baeza_2024.pdf'
 
 class App extends Component {
   render() {

@@ -1,8 +1,10 @@
 const snippet =
 `const ebaeza = new Developer({
-  fullstack: true,
   passionate: true,
-  autodidact: true,
+  commitment: true,
+  innovation: true,
+  experience: true,
+  tacoLover: true,
 })
 
 if (ebaeza.status !== 'coding') {

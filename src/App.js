@@ -5,8 +5,11 @@ import ebaezaSit from './edgarbaeza-sitting.png'
 import './App.css'
 import Highlight from 'react-highlight'
 import 'highlight.js/styles/atom-one-dark.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faFileText } from '@fortawesome/free-regular-svg-icons'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
-const urlCV = 'https://storage.googleapis.com/edgarbaezamx.appspot.com/CV_Edgar_Aparicio_Baeza_2024.pdf'
+const urlCV = 'https://storage.googleapis.com/edgarbaezamx.appspot.com/Edgar_Aparicio_Baeza_CV.pdf'
 
 class App extends Component {
   render() {
@@ -18,8 +21,8 @@ class App extends Component {
           </div>
           <div>
             <header className="App-header">
-              <h1>Edgar Baeza</h1>
-              <h2>Web Application Developer</h2>
+              <h1>Edgar Aparicio Baeza</h1>
+              <h2>Software Engineer</h2>
             </header>
 
             <img src={ebaezaSit} className="App-personage sitting" alt="Edgar Baeza sentado"/>
@@ -28,20 +31,21 @@ class App extends Component {
               {snippet}
             </Highlight>
 
-            <p className="App-intro">"I enjoy the puzzle of expressing human thoughts and idioms in terms of a programming language"</p>
+            <p className="App-intro">"I enjoy the puzzle of expressing human thoughts in terms of a programming language"</p>
 
-            <footer>
+            <main>
               <p>
                 Contact: <br />
-                <i className="fa fa-envelope"></i> <a href="mailto:ebaeza1992@gmail.com">ebaeza1992@gmail.com</a> <br />
+                <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:ebaeza1992@gmail.com" target="_blank" rel="noreferrer">ebaeza1992@gmail.com</a> <br />
+                <FontAwesomeIcon icon={faWhatsapp} /> <a href="https://wa.me/525518373164" target="_blank" rel="noreferrer">Chat me</a> <br />
               </p>
-              <p>Resume: <i className="fa fa-file-text"/> <a href={urlCV} target="_blank" rel="noreferrer">More about me</a> </p>
+              <p>Resume: <FontAwesomeIcon icon={faFileText} /> <a href={urlCV} target="_blank" rel="noreferrer">More about me</a> </p>
               <p>
                 Social: <br />
-                <i className="fa fa-github"></i> <a href="https://github.com/eBaeza" target="_blank" rel="noreferrer">eBaeza</a> <br />
-                <i className="fa fa-linkedin"></i> <a href="https://mx.linkedin.com/in/edgar-baeza" target="_blank" rel="noreferrer">edgar-baeza</a> <br />
+                <FontAwesomeIcon icon={faGithub} /> <a href="https://github.com/eBaeza" target="_blank" rel="noreferrer">eBaeza</a> <br />
+                <FontAwesomeIcon icon={faLinkedin} /> <a href="https://mx.linkedin.com/in/edgar-baeza" target="_blank" rel="noreferrer">edgar-baeza</a> <br />
               </p>
-            </footer>
+            </main>
           </div>
         </div>
       </div>

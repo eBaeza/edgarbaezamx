@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3 # Actualiza a la versión 3 para asegurarte de usar Node.js 20
         with:
-          node-version: "20" # Ajusta la versión de Node.js a 20
+          node-version: "22" # Ajusta la versión de Node.js a 22
 
       - name: Install dependencies
         run: npm install
@@ -29,4 +29,4 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
           npm install -g firebase-tools
-          firebase deploy --only hosting
+          firebase deploy --only hosting --project edgarbaezamx

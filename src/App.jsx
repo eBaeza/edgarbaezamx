@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faFileText } from '@fortawesome/free-regular-svg-icons'
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
-const urlCV = 'https://storage.googleapis.com/edgarbaezamx.appspot.com/Edgar_Aparicio_Baeza_CV.pdf'
+const urlCV = '/Edgar_Aparicio_Baeza_CV.pdf'
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <div>
-            <img src={ebaezaThink} className="App-personage thinking" alt="Edgar Baeza pensando"/>
+            <img src={ebaezaThink} className="App-personage thinking" alt="Edgar Baeza pensando" />
           </div>
           <div>
             <header className="App-header">
@@ -25,7 +25,7 @@ class App extends Component {
               <h2>Software Engineer</h2>
             </header>
 
-            <img src={ebaezaSit} className="App-personage sitting" alt="Edgar Baeza sentado"/>
+            <img src={ebaezaSit} className="App-personage sitting" alt="Edgar Baeza sentado" />
 
             <Highlight className="App-introcode js">
               {snippet}

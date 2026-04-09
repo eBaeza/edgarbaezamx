@@ -1,29 +1,72 @@
+:root {
+  /* Core modern purple palette based on representative colors */
+  --color-bg-base: #0a0a0a;
+  /* Dark neutral void */
+  --color-primary: #8b5cf6;
+  /* Elegant violet */
+  --color-secondary: #1f1f1f;
+  /* Neutral slate secondary */
+  --color-accent: #2dd4bf;
+  /* Modern turquoise for links/highlights */
+  --color-accent-glow: rgba(45, 212, 191, 0.5);
+
+  --color-text-main: #f8fafc;
+  --color-text-muted: #cbd5e1;
+  --color-card-bg: rgba(255, 255, 255, 0.03);
+  --color-card-border: rgba(255, 255, 255, 0.08);
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Text Me One', sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
   text-rendering: optimizeLegibility;
-  background: linear-gradient(to left, #734b6d 40%, #42275a);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  min-height: 100vh;
+  /* Add subtle background glowing orbs using radial gradients */
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(45, 212, 191, 0.08) 0%, transparent 50%);
+  background-attachment: fixed;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Julius Sans One', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
-
 
 a {
-  color: turquoise;
+  color: var(--color-accent);
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 a:hover {
   text-decoration: underline;
+  text-shadow: 0 0 8px var(--color-accent-glow);
 }
 
-code {
-  font-family: 'Fira Code';
+code,
+pre {
+  font-family: var(--font-mono);
   font-size: 14px;
-  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
 }

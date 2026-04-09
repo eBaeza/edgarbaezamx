@@ -15,38 +15,71 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="container">
-          <div>
-            <img src={ebaezaThink} className="App-personage thinking" alt="Edgar Baeza pensando" />
-          </div>
-          <div>
+        <div className="glass-container">
+
+          {/* Left Column: Information & Actions */}
+          <div className="content-col">
             <header className="App-header">
               <h1>Edgar Aparicio Baeza</h1>
               <h2>Software Engineer</h2>
             </header>
 
-            <img src={ebaezaSit} className="App-personage sitting" alt="Edgar Baeza sentado" />
-
-            <Highlight className="App-introcode js">
-              {snippet}
-            </Highlight>
+            <img src={ebaezaSit} className="App-personage sitting" alt="Edgar Baeza sitting" />
 
             <p className="App-intro">"I enjoy the puzzle of expressing human thoughts in terms of a programming language"</p>
 
-            <main>
-              <p>
-                Contact: <br />
-                <FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:ebaeza1992@gmail.com" target="_blank" rel="noreferrer">ebaeza1992@gmail.com</a> <br />
-                <FontAwesomeIcon icon={faWhatsapp} /> <a href="https://wa.me/525518373164" target="_blank" rel="noreferrer">Chat me</a> <br />
-              </p>
-              <p>Resume: <FontAwesomeIcon icon={faFileText} /> <a href={urlCV} target="_blank" rel="noreferrer">More about me</a> </p>
-              <p>
-                Social: <br />
-                <FontAwesomeIcon icon={faGithub} /> <a href="https://github.com/eBaeza" target="_blank" rel="noreferrer">eBaeza</a> <br />
-                <FontAwesomeIcon icon={faLinkedin} /> <a href="https://mx.linkedin.com/in/edgar-baeza" target="_blank" rel="noreferrer">edgar-baeza</a> <br />
-              </p>
+            <main className="contact-actions">
+              <div className="action-section">
+                <h3>Contact</h3>
+                <div className="action-group">
+                  <a className="action-btn" href="mailto:ebaeza1992@gmail.com" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faEnvelope} /> Email Me
+                  </a>
+                  <a className="action-btn" href="https://wa.me/525518373164" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <div className="action-section">
+                <h3>Resume</h3>
+                <div className="action-group">
+                  <a className="action-btn" href={urlCV} target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faFileText} /> View CV
+                  </a>
+                </div>
+              </div>
+
+              <div className="action-section">
+                <h3>Social</h3>
+                <div className="action-group">
+                  <a className="action-btn" href="https://github.com/eBaeza" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faGithub} /> GitHub
+                  </a>
+                  <a className="action-btn" href="https://mx.linkedin.com/in/edgar-baeza" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+                  </a>
+                </div>
+              </div>
             </main>
           </div>
+
+          {/* Right Column: Visuals & Code */}
+          <div className="visual-col">
+            <img src={ebaezaThink} className="App-personage thinking" alt="Edgar Baeza thinking" />
+
+            <div className="mac-window">
+              <div className="mac-window-header">
+                <div className="mac-dot close"></div>
+                <div className="mac-dot minimize"></div>
+                <div className="mac-dot maximize"></div>
+              </div>
+              <Highlight className="App-introcode js">
+                {snippet}
+              </Highlight>
+            </div>
+          </div>
+
         </div>
       </div>
     )

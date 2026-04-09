@@ -1,0 +1,7 @@
+{
+    "$schema": "./node_modules/wrangler/config-schema.json",
+    "name": "edgarbaezamx",
+    "compatibility_date": "2026-04-08",
+    "main": "./src/worker.ts",
+    "workers_dev": false,
+}
